@@ -4,7 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
+// TODO: Czemu ta klasa i kilka innych jest tutaj skoro masz folder model w którym masz inne encje?
+// TODO: Staraj się nie tworzyć anemicznych encji, które nic nie robią.
 @Entity
 public class Car {
     @Id
