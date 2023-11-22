@@ -14,9 +14,10 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 @EnableWebSecurity
+        // TODO: Nie łam tak, to nie jest żadna konwencja.
 public class SecurityConfig
         extends WebSecurityConfigurerAdapter {
-
+    // TODO: W Springu używaj już w konstruktorze a nie @Autowired na pole, potem ciężko jest cokolwiek mockować.
     @Autowired
     private UserService userService;
 
@@ -59,7 +60,7 @@ public class SecurityConfig
                 .permitAll();
 
     }
-
+// TODO: Nie zostawiaj zakomentowanego kodu w ten sposób.
 //    @Override
 //    protected void configure(HttpSecurity http) throws Exception {
 //        http
